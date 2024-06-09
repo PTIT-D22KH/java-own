@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class j01001 {
-    @SuppressWarnings("resource")
+    // @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner ip = new Scanner(System.in);
         int w = ip.nextInt();
