@@ -1,6 +1,7 @@
 package basic;
 
 public class FloatCont {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         float x = 1.5f;
         float y = 1.0f;

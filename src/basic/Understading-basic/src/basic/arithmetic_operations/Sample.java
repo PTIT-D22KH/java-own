@@ -1,7 +1,9 @@
 package basic.arithmetic_operations;
 
 public class Sample {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
+        
         int x  = 12 / 2;
         String text = "Study" + "Easy";
         int mod1 = 13 % 2 ;

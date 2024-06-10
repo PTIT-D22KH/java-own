@@ -1,6 +1,7 @@
 package basic;
 
 public class Float {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         float max = 3.4023423f;//4 byte
         float min = 1.40e-45f;
