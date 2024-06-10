@@ -1,6 +1,7 @@
 package basic.type_casting2;
 
 public class Sample {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         String a1 = "10";
         // int i = (int)a1;//not works
