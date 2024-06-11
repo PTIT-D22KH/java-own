@@ -1,4 +1,4 @@
-package animal;
+package inheritance_ex.animal;
 
 public class Animal {
     protected float heightInFeet;

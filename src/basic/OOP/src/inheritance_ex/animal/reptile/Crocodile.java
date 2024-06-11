@@ -1,4 +1,4 @@
-package animal.reptile;
+package inheritance_ex.animal.reptile;
 
 public class Crocodile extends Reptile{
     public Crocodile() {

@@ -1,5 +1,5 @@
-package animal.bird;
-import animal.Animal;
+package inheritance_ex.animal.bird;
+import inheritance_ex.animal.Animal;
 public class Bird extends Animal{
     protected boolean feather = true;
     protected boolean canFly = true;

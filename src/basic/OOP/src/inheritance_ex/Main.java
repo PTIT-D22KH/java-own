@@ -1,7 +1,8 @@
-import animal.Animal;
-import animal.bird.*;
-import animal.fish.*;
-import animal.reptile.*;
+package inheritance_ex;
+import inheritance_ex.animal.Animal;
+import inheritance_ex.animal.bird.*;
+import inheritance_ex.animal.fish.*;
+import inheritance_ex.animal.reptile.*;
 public class Main {
     public static void main(String[] args) {
         Reptile reptile = new Reptile();

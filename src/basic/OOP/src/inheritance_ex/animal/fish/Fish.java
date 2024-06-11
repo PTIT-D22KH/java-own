@@ -1,6 +1,6 @@
-package animal.fish;
+package inheritance_ex.animal.fish;
 
-import animal.Animal;
+import inheritance_ex.animal.Animal;
 public class Fish extends Animal{
     protected boolean waterBone = true;
     protected boolean gills = true;

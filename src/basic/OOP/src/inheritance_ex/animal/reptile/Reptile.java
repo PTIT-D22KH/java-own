@@ -1,5 +1,5 @@
-package animal.reptile;
-import animal.Animal;
+package inheritance_ex.animal.reptile;
+import inheritance_ex.animal.Animal;
 public class Reptile extends Animal{
     protected String skin, egg;
     protected boolean backbone;

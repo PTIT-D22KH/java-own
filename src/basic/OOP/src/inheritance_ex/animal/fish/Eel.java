@@ -1,4 +1,4 @@
-package animal.fish;
+package inheritance_ex.animal.fish;
 
 public class Eel extends Fish{
     private String special;

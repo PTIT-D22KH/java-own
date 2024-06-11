@@ -1,4 +1,4 @@
-package animal.bird;
+package inheritance_ex.animal.bird;
 
 public class Eagle extends Bird{
 
