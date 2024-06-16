@@ -1,6 +1,11 @@
 package interface_java;
-public class SamsungPhone {
-    public int processor() {
-        return 888;
+public class SamsungPhone implements Phone{
+    public String processor() {
+        return "SD1000";
+    }
+
+    @Override
+    public int spaceInGb() {
+        return 256;
     }
 }
