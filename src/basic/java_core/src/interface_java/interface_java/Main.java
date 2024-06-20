@@ -12,10 +12,11 @@ public class Main {
         // System.out.println(s);
         // System.out.println(phone2.spaceInGb());
 
-        Phone phone = new Iphone();
+        Iphone phone = new Iphone();
         String p = phone.processor();
         System.out.println(p);
         System.out.println(phone.spaceInGb());
+        System.out.println(phone.airdrop());
 
     
     }
