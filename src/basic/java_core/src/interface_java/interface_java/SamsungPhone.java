@@ -1,5 +1,5 @@
 package interface_java;
-public class SamsungPhone implements Phone{
+public class SamsungPhone implements Phone, Android{
     public String processor() {
         return "SD1000";
     }
@@ -7,5 +7,10 @@ public class SamsungPhone implements Phone{
     @Override
     public int spaceInGb() {
         return 256;
+    }
+
+    @Override
+    public String whatsapp() {
+        return "whatsapp";
     }
 }
