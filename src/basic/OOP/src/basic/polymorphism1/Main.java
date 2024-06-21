@@ -1,7 +1,7 @@
 package basic.polymorphism1;
-import basic.polymorphism1.Phone;
-import basic.polymorphism1.Nokia3310;
-import basic.polymorphism1.Iphone;
+// import basic.polymorphism1.Phone;
+// import basic.polymorphism1.Nokia3310;
+// import basic.polymorphism1.Iphone;
 public class Main {
     public static void main(String[] args) {
         Phone p = new Phone();
