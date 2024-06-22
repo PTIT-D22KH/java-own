@@ -12,33 +12,41 @@ public class dsa01003 {
     }
     public static void testCase() {
         int n = input.nextInt();
-        int k = input.nextInt();
-        ArrayList<Integer> a = new ArrayList<>();
-        for (int i = 1; i <= k; i++) {
-            int x = input.nextInt();
-            a.add(x);
+        int []a = new int[n + 1];
+        for (int i = 1; i <= n; i++) {
+            a[i] = input.nextInt();
         }
-        int i = k - 1;
-        while (i >= 0 && a.get(i) == (n - k + i + 1)) {
-            i--;
+        int j = n - 1;
+        while (j >= 1 && a[j] > a[j + 1]) {
+            j--;
         }
-        if (i >= 0) {
-            a.set(i, a.get(i) + 1);
-            for (int j = i + 1; j < k; j++) { // Correctly iterate over the ArrayList
-                a.set(j, a.get(j - 1) + 1);
-            }
-        } else {
-            for (int j = 1; j <= k; j++) {
-                System.out.printf("%d ", j);
+        if (j == 0) {
+            for (int i = 1; i <= n; i++) {
+                System.out.printf("%d ", i);
             }
             System.out.println();
-            return; // Correctly return to avoid further execution
+            return;
         }
-    
-        // Correctly print the updated ArrayList
-        for (int num : a) {
-            System.out.printf("%d ", num);
+        int k = n;
+        while (k >= 1 && a[j] > a[k]) {
+            k--;
+        }
+        int temp = a[j];
+        a[j] = a[k];
+        a[k] = temp;
+        int l = j + 1, r = n;
+        while (l <= r) {
+            int tmp = a[l];
+            a[l] = a[r];
+            a[r] = tmp;
+            l++;
+            r--;
+        }        
+        for (int i = 1; i <= n; i++) {
+            System.out.printf("%d ", a[i]);
+            
         }
         System.out.println();
+        
     }
 }
