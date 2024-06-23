@@ -19,11 +19,6 @@ public class dsa05004 {
                 }
             }
         }
-        // Find the maximum value in dp array
-        int max = dp[0];
-        for (int i = 1; i < dp.length; i++) {
-            max = Math.max(max, dp[i]);
-        }
-        System.out.println(max);
+        System.out.println(Arrays.stream(dp).max().getAsInt());
     }
 }
