@@ -17,4 +17,10 @@ public abstract class EducationalItem extends Item{
         this.color = color;
         this.chatLieu = chatLieu;
     }
+    @Override
+    public void show() {
+        super.show();
+        System.out.printf("Màu sắc: %s\n", this.getColor());
+        System.out.printf("Chất liệu: %s\n", this.getChatLieu());
+    }
 }

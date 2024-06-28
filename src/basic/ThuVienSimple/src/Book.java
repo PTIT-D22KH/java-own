@@ -20,9 +20,7 @@ public class Book extends Item{
 
     @Override
     public void show() {
-        System.out.println("Ten san pham: " + this.getName());
-        System.out.println("Gia ban: " + this.getPrice());
-        System.out.printf("Thuong hieu: %s \n", this.getBrand());
+        super.show();
         System.out.printf("Thể loại: %s\n", this.getGenre());
         System.out.printf("Tác giả: %s\n", this.getAuthor());
         System.out.printf("Nhà xuất bản: %s\n", this.getNhaXuatBan());
