@@ -25,7 +25,7 @@ public class MenuAdmin implements Menu{
         System.out.println("Nhập tên sách: ");
         String ten = sc.nextLine();
         System.out.println("Nhập giá bán: ");
-        String giaBan = sc.nextLine();
+        int giaBan = sc.nextInt();
         System.out.println("Nhập thương hiệu: ");
         String thuongHieu = sc.nextLine();
         System.out.println("Nhập thể loại: ");
@@ -35,7 +35,7 @@ public class MenuAdmin implements Menu{
         System.out.println("Nhập tên nhà xuất bản: ");
         String nhaXuatBan = sc.nextLine();
         System.out.println("Nhập năm xuất bản: ");
-        String namXuatBan = sc.nextLine();
+        int namXuatBan = sc.nextInt();
         System.out.println("Nhập ngôn ngữ: ");
         String ngonNgu = sc.nextLine();
         Book newBook = new Book(ten, giaBan, theLoai, tacGia, thuongHieu, nhaXuatBan, namXuatBan, ngonNgu);
@@ -48,7 +48,7 @@ public class MenuAdmin implements Menu{
         System.out.println("Nhập tên vở: ");
         String ten = sc.nextLine();
         System.out.println("Nhập giá bán: ");
-        String giaBan = sc.nextLine();
+        int giaBan = sc.nextInt();
         System.out.println("Nhập số trang: ");
         String soTrang = sc.nextLine();
         System.out.println("Nhập tên thương hiệu: ");
@@ -61,7 +61,7 @@ public class MenuAdmin implements Menu{
         String chatLieu = sc.nextLine();
         System.out.println("Nhập kích thước (A4 / A5 / A6): ");
         String kichThuoc = sc.nextLine();
-        Notebook newNoteBook = new Notebook(ten, giaBan, soTrang, thuongHieu, loaiVo, mauSac, chatLieu, kichThuoc);
+        Notebook newNoteBook = new Notebook(ten, giaBan, thuongHieu, mauSac,  chatLieu,  soTrang, kichThuoc,  loaiVo);
         items.add(newNoteBook);
         System.out.println("Vở mới đã được thêm!!");
     }
@@ -71,7 +71,7 @@ public class MenuAdmin implements Menu{
         System.out.println("Nhập tên bút: ");
         String ten = sc.nextLine();
         System.out.println("Nhập giá bán: ");
-        String giaBan = sc.nextLine();
+        int giaBan = sc.nextInt();
         System.out.println("Nhập tên thương hiệu: ");
         String thuongHieu = sc.nextLine();
         System.out.println("Nhập màu sắc: ");
@@ -82,7 +82,7 @@ public class MenuAdmin implements Menu{
         String loaiMuc = sc.nextLine();
         System.out.println("Nhập độ mịn (đơn vị mm): ");
         String doMin = sc.nextLine() + "mm";
-        Pen newPen = new Pen(ten, giaBan, thuongHieu, mauSac, chatLieu, loaiMuc, doMin);
+        Pen newPen = new InkPen(ten, giaBan, thuongHieu,mauSac, chatLieu,loaiMuc,doMin);
         items.add(newPen);
         System.out.println("Bút mực mới đã được thêm!!");
     }
@@ -92,7 +92,7 @@ public class MenuAdmin implements Menu{
         System.out.println("Nhập tên bút: ");
         String ten = sc.nextLine();
         System.out.println("Nhập giá bán: ");
-        String giaBan = sc.nextLine();
+        int giaBan = sc.nextInt();
         System.out.println("Nhập tên thương hiệu: ");
         String thuongHieu = sc.nextLine();
         System.out.println("Nhập màu sắc: ");
@@ -101,7 +101,7 @@ public class MenuAdmin implements Menu{
         String chatLieu = sc.nextLine();
         System.out.println("Nhập độ cứng (HB / 2B / 3B / 4B / 5B / 6B / 7B / 8B / 9B / 10B): ");
         String doCung = sc.nextLine();
-        Pencil newPencil = new Pencil(ten, giaBan, thuongHieu, mauSac, chatLieu, doCung);
+        Pencil newPencil = new Pencil(ten, giaBan, thuongHieu,  mauSac,chatLieu, doCung);
         items.add(newPencil);
         System.out.println("Bút chì mới đã được thêm!!");
     }

@@ -17,8 +17,7 @@ public class Notebook extends EducationalItem{
     public String getLoaiVo() {
         return loaiVo;
     }
-    public Notebook(String name, int price, String brand, String color, String chatLieu, int soTrang, String kichThuoc,
-            String loaiVo) {
+    public Notebook(String name, int price, String brand, String color, String chatLieu, int soTrang, String kichThuoc, String loaiVo) {
         super(name, price, brand, color, chatLieu);
         this.soTrang = soTrang;
         this.kichThuoc = kichThuoc;
